@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import styles from "./styles/Global.module.scss";
+import Navbar from "./components/Navbar";
+import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/pages/Home";
+import Contact from "./components/pages/Contact";
+import Credits from "./components/pages/Credits";
+import Services from "./components/pages/Services";
 
 function App() {
+  const [dark, setDark] = useState(true);
+  const modeToggle = () => {
+    setDark((prev) => !prev);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={dark ? styles.dark_container : styles.light_container}>
+      <Navbar changeMode={modeToggle} />{" "}
+      <Routes>
+        <Route path="/" exact element={<Home />} />{" "}
+        <Route path="/services" element={<Services />} />{" "}
+        <Route path="/contact" element={<Contact />} />{" "}
+        <Route path="/credits" element={<Credits />} />{" "}
+      </Routes>{" "}
     </div>
   );
 }
