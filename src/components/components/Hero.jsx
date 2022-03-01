@@ -13,7 +13,7 @@ function Hero() {
       </div>
       <div className={styles.input_group}>
         <Input placeholder="Enter your email address"></Input>
-        <Button>Get started &#8811;</Button>
+        <Button normal={true}>Get started &#8811;</Button>
       </div>
     </div>
   );

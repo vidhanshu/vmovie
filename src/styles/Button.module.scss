@@ -1,4 +1,4 @@
-button {
+.normal {
     padding: 8px 16px;
     background-color: var(--primary);
     border: none;
@@ -9,5 +9,21 @@ button {
     cursor: pointer;
     &:hover {
         background-color: var(--primary-hover);
+    }
+}
+
+.outlined {
+    padding: 8px 16px;
+    background-color: transparent;
+    border: 0.5px solid rgb(122, 122, 122);
+    border-radius: 0px;
+    color: rgb(122, 122, 122);
+    display: block;
+    margin: 10px 0px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    &:hover {
+        background-color: rgb(255, 255, 255);
+        color: black;
     }
 }

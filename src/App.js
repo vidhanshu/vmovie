@@ -6,7 +6,7 @@ import Home from "./components/pages/Home";
 import Contact from "./components/pages/Contact";
 import Credits from "./components/pages/Credits";
 import Services from "./components/pages/Services";
-
+import Footer from "./components/components/Footer";
 function App() {
   const [dark, setDark] = useState(true);
   const modeToggle = () => {
@@ -27,6 +27,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />{" "}
         <Route path="/credits" element={<Credits />} />{" "}
       </Routes>{" "}
+      <Footer />
     </div>
   );
 }

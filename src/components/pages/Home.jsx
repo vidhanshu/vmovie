@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "../../styles/Home.module.scss";
 import Hero from "../components/Hero";
-import HomeSection from "../components/HomeSection";
-import { section } from "../../api/homesections";
+import HomeSections from "../components/HomeSections";
 function Home() {
   const [movies, setMovies] = useState([]);
 
@@ -17,30 +16,13 @@ function Home() {
   //       console.log(err);
   //     });
   // };
-  console.log(section);
   return (
     <div className={styles.container}>
       <section className={styles.hero_container}>
         <Hero />
       </section>
       <section className={styles.sections}>
-        {section.map(
-          ({ video, alt, src, heading, description, reverse }, idx) => {
-            return (
-              <React.Fragment key={idx}>
-                <HomeSection
-                  alt={alt}
-                  src={src}
-                  video={video}
-                  heading={heading}
-                  description={description}
-                  reverse={reverse}
-                />
-                <hr className={styles.hr} />
-              </React.Fragment>
-            );
-          }
-        )}
+        <HomeSections />
       </section>
     </div>
   );
