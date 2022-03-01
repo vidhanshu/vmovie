@@ -1,12 +1,9 @@
-.nav {
-    position: sticky;
-    top: 0;
-}
+.nav {}
 
 .navbar_container {
     z-index: 1000;
     position: relative;
-    background-color: var(--bgcolor);
+    background-color: var(--navbar-bg);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,12 +11,13 @@
     .logo {
         cursor: pointer;
         img {
-            width: 40px;
+            width: 100px;
             height: 40px;
         }
     }
     .right_container {
         display: flex;
+        justify-content: end;
         .right_options {
             min-width: 50px;
             display: flex;
@@ -48,6 +46,7 @@
             }
         }
         .right_menu {
+            min-width: 550px;
             transition: 0.3s ease-in-out;
             display: flex;
             justify-content: center;
@@ -82,6 +81,7 @@
                 height: 100vh;
                 top: 61px;
                 right: 0;
+                min-width: auto !important;
                 width: 100vw;
                 .right_menu_ul {
                     display: block;
@@ -97,7 +97,7 @@
                         transition: 0.3s ease-in-out;
                         cursor: pointer;
                         &:hover {
-                            border-radius: 0px;
+                            border-radius: 0;
                             background-color: var(--hover);
                         }
                     }
@@ -109,6 +109,17 @@
         }
         .close {
             width: 100%;
+        }
+        .btn {
+            background-color: var(--primary);
+            color: var(--sign-up-btn-text-color) !important;
+            width: fit-content;
+            border-radius: 5px !important;
+            padding: 8px 16px !important;
+            margin: 10px 0px 10px 20px;
+            &:hover {
+                background-color: var(--primary-hover) !important;
+            }
         }
     }
 }

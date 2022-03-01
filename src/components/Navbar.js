@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import styles from "../styles/navbar.module.scss";
-import logo from "../assets/logo.svg";
+import logo from "../assets/LOGO-NAME.svg";
 import { Link } from "react-router-dom";
 function Navbar({ changeMode }) {
   const [isLight, setIsLight] = useState(true);
@@ -18,6 +18,7 @@ function Navbar({ changeMode }) {
   const responsiveNavbar = () => {
     if (window.innerWidth < 700) {
       setSize(true);
+      setMenu(true);
     } else {
       setSize(false);
       setMenu(false);
@@ -68,6 +69,12 @@ function Navbar({ changeMode }) {
 
               <Link to="/services">
                 <li onClick={size ? changeMenu : null}>Services </li>
+              </Link>
+
+              <Link to="/sign">
+                <li className={styles.btn} onClick={size ? changeMenu : null}>
+                  Sign in
+                </li>
               </Link>
             </ul>
           </div>

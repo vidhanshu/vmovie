@@ -13,7 +13,13 @@ function App() {
     setDark((prev) => !prev);
   };
   return (
-    <div className={dark ? styles.dark_container : styles.light_container}>
+    <div
+      className={
+        dark
+          ? `${styles.dark_container} ${styles.common}`
+          : ` ${styles.light_container} ${styles.common}`
+      }
+    >
       <Navbar changeMode={modeToggle} />{" "}
       <Routes>
         <Route path="/" exact element={<Home />} />{" "}

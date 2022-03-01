@@ -7,6 +7,15 @@
     list-style: none;
     text-decoration: none;
     font-family: "roboto", sans-serif;
+    font-size: 15px;
+}
+
+.common {
+    --sign-up-btn-text-color: white;
+    --primary: #e50914;
+    --primary-hover: #a80109;
+    position: relative;
+    background-color: black;
 }
 
 .dark_container {
@@ -16,6 +25,7 @@
     --nav-menu-color: rgb(19, 0.19, 0.19);
     --color: white;
     --hover: rgb(68, 68, 68);
+    --navbar-bg: #1b1b1b00;
 }
 
 .light_container {
@@ -24,5 +34,6 @@
     --bgcolor: rgb(233, 233, 233);
     --nav-menu-color: rgb(235, 235, 235);
     --color: rgb(31, 31, 31);
-    --hover: rgb(214, 214, 214);
+    --hover: rgb(197, 197, 197);
+    --navbar-bg: #d6d6d6;
 }

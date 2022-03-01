@@ -1,0 +1,38 @@
+.hero_container {
+    padding: 30px;
+    min-width: 300px;
+    max-width: 700px;
+    text-align: center;
+    h1 {
+        font-weight: 900;
+        font-size: 40px;
+        color: white;
+    }
+    .sub_heading {
+        color: white;
+        font-size: 25px;
+        font-weight: 300;
+        margin: 10px 0px;
+    }
+    .description {
+        color: white;
+        font-size: 15px;
+        margin: 10px 0px;
+    }
+    .input_group {
+        display: flex;
+        width: fit-content;
+        margin: auto;
+    }
+    @media (max-width: 700px) {
+        .input_group {
+            display: block;
+            button {
+                margin: 10px auto;
+            }
+            input {
+                padding: 13px 16px;
+            }
+        }
+    }
+}

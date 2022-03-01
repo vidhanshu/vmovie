@@ -2,5 +2,15 @@
     color: var(--color);
     min-height: 100vh;
     background-color: var(--bgcolor);
-    padding: 20px;
+}
+
+.hero_container {
+    height: 80vh;
+    min-height: 500px;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.548), rgba(0, 0, 0, 0.712)), url("../assets/vmovi.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
