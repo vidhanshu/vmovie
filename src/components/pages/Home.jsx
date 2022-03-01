@@ -1,9 +1,8 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../../styles/Home.module.scss";
 import Hero from "../components/Hero";
 import HomeSection from "../components/HomeSection";
-import device from "../../assets/tv.png";
-import sacred from "../../assets/video-devices-in.m4v";
+import { section } from "../../api/homesections";
 function Home() {
   const [movies, setMovies] = useState([]);
 
@@ -18,20 +17,30 @@ function Home() {
   //       console.log(err);
   //     });
   // };
-
+  console.log(section);
   return (
     <div className={styles.container}>
       <section className={styles.hero_container}>
         <Hero />
       </section>
       <section className={styles.sections}>
-        <HomeSection
-          alt="aisehi"
-          src={device}
-          video={sacred}
-          heading="Watch everywhere."
-          description="Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV."
-        />
+        {section.map(
+          ({ video, alt, src, heading, description, reverse }, idx) => {
+            return (
+              <React.Fragment key={idx}>
+                <HomeSection
+                  alt={alt}
+                  src={src}
+                  video={video}
+                  heading={heading}
+                  description={description}
+                  reverse={reverse}
+                />
+                <hr className={styles.hr} />
+              </React.Fragment>
+            );
+          }
+        )}
       </section>
     </div>
   );
