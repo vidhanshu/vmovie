@@ -26,7 +26,7 @@ function App() {
         <Route path="/services" element={<Services />} />{" "}
         <Route path="/contact" element={<Contact />} />{" "}
         <Route path="/credits" element={<Credits />} />{" "}
-      </Routes>{" "}
+      </Routes>
       <Footer />
     </div>
   );

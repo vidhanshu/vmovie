@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import styles from "../../styles/Home.module.scss";
 import Hero from "../components/Hero";
 import HomeSections from "../components/HomeSections";
+import FAQ from "../components/FAQ";
+
 function Home() {
   const [movies, setMovies] = useState([]);
 
@@ -23,6 +25,9 @@ function Home() {
       </section>
       <section className={styles.sections}>
         <HomeSections />
+      </section>
+      <section className={styles.faq}>
+        <FAQ />
       </section>
     </div>
   );

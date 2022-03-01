@@ -1,0 +1,37 @@
+.collapse_container {
+    max-width: 700px;
+    margin: auto;
+    color: white;
+}
+
+.collapse_question {
+    background: rgb(68, 68, 68);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    margin: auto;
+}
+
+.collapse_ans {
+    margin: 2px 0px;
+    padding: 10px 20px;
+    background-color: rgb(44, 44, 44);
+    transition: 0.5s ease-in;
+}
+
+.open {
+    height: fit-content;
+}
+
+.icon {
+    transition: 0.5s ease-in;
+}
+
+.close {
+    height: 0px;
+    overflow: hidden;
+    padding: 0px 20px;
+}

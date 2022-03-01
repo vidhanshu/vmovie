@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../../styles/Footer.module.scss";
 import { Link } from "react-router-dom";
 import Button from "./Button";
+import logo from "../../assets/LOGO-NAME.svg";
 function Footer() {
   return (
     <footer className={styles.container}>
@@ -56,8 +57,10 @@ function Footer() {
           </li>
         </ul>
       </div>
-      <div className={styles.select}>
-        <Button normal={false}>Select</Button>
+      <div className={styles.logo}>
+        <Link to="/">
+          <img src={logo} alt="logo" />
+        </Link>
       </div>
       <div className={styles.copyright}>
         vmovie © All rights reserved {new Date().getFullYear() - 1}-
