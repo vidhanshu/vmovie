@@ -17,7 +17,7 @@ function Footer() {
             <Link to="/">Media Centre</Link>
           </li>
           <li>
-            <Link to="/">Ways to Watch</Link>
+            <Link to="/way-to-watch">Ways to Watch</Link>
           </li>
           <li>
             <Link to="/">Cookie Preferences</Link>

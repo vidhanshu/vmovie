@@ -1,0 +1,29 @@
+.acc_component {
+    text-align: center;
+    max-width: 100px;
+    list-style: none;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 10px 20px;
+    img {
+        width: 60px;
+    }
+    .div {
+        position: absolute;
+        height: 10px;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+    }
+    &:hover {
+        background-color: rgb(230, 230, 230);
+    }
+    &:hover .div {
+        background-color: rgb(230, 230, 230);
+    }
+}

@@ -1,0 +1,27 @@
+nav {
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.438);
+    backdrop-filter: blur(80px);
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    padding: 0px 20px;
+    justify-content: space-between;
+    align-items: center;
+    .right {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    img {
+        width: 90px;
+    }
+    .signIn {
+        color: var(--primary);
+        margin: 0px 10px;
+        cursor: pointer;
+    }
+}

@@ -20,7 +20,7 @@ function App() {
           : ` ${styles.light_container} ${styles.common}`
       }
     >
-      <Navbar changeMode={modeToggle} />{" "}
+      <Navbar changeMode={modeToggle} />
       <Routes>
         <Route path="/" exact element={<Home />} />{" "}
         <Route path="/services" element={<Services />} />{" "}
