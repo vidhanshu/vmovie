@@ -1,22 +1,17 @@
 .options_container {
+    display: flex;
+    justify-content: center;
     .options {
         overflow: auto;
         display: flex;
-        border: 1px solid green;
     }
-}
-
-.content {
-    backdrop-filter: blur(10px);
-    height: 500px;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    // padding: 20px;
-    img {
-        width: 50%;
+    .content {
+        backdrop-filter: blur(10px);
+        height: 500px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
-    .con_heading {}
 }

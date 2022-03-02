@@ -3,6 +3,8 @@ import styles from "../../../styles/connect-to-vmovie/ConAccordion.module.scss";
 import { way } from "../../../api/WayToWatch";
 import AccordionSub from "./AccordionSub";
 import img from "../../../assets/cover-img.jpg";
+import { content } from "../../../api/ContentWayToWatc";
+import ConComp from "./ConComp";
 function ConAccordion() {
   const [current, setCurrent] = useState(0);
   const elems = React.useRef();
@@ -12,8 +14,9 @@ function ConAccordion() {
 
   const addListEners = () => {
     const elements = [...elems.current.children];
-    elements.map((e) => {
+    elements.map((e, idx) => {
       e.addEventListener("click", () => {
+        setCurrent(idx);
         elements.map((k) => {
           k.children[2].style.background = "white";
           e.children[2].style.background = "red";
@@ -40,10 +43,11 @@ function ConAccordion() {
         </ul>
       </div>
       <div className={styles.con_container}>
-        <div className={styles.content}>
-          <h1 className={styles.con_heading}>hii</h1>
-          <img src={img} alt="cover" />
-        </div>
+        <ConComp
+          heading={content[current].heading}
+          src={content[current].img}
+          description={content[current].description}
+        />
       </div>
     </div>
   );

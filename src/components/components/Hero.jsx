@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../../styles/Hero.module.scss";
 import Button from "./Button";
 import Input from "./Input";
+import { Link } from "react-router-dom";
 function Hero() {
   return (
     <div className={styles.hero_container}>
@@ -13,7 +14,9 @@ function Hero() {
       </div>
       <div className={styles.input_group}>
         <Input placeholder="Enter your email address"></Input>
-        <Button normal={true}>Get started &#8811;</Button>
+        <Link to="/movies">
+          <Button normal={true}>Get started &#8811;</Button>
+        </Link>
       </div>
     </div>
   );

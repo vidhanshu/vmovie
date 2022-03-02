@@ -25,9 +25,11 @@
     --nav-menu-color: rgb(19, 0.19, 0.19);
     --color: white;
     --hover: rgb(68, 68, 68);
-    --navbar-bg: #1b1b1b00;
+    --navbar-bg: #1b1b1b;
     --collapse: rgb(27, 27, 27);
     --section-bg: black;
+    --box-shadow-border: 0px 0px 2px rgb(255, 255, 255);
+    --scroll-bar-color: black;
 }
 
 .light_container {
@@ -40,4 +42,6 @@
     --navbar-bg: #ffffff;
     --collapse: rgb(165, 165, 165);
     --section-bg: rgb(233, 233, 233);
+    --box-shadow-border: 0px 0px 2px rgb(0, 0, 0);
+    --scroll-bar-color: rgb(240, 240, 240);
 }

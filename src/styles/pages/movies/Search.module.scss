@@ -1,0 +1,14 @@
+.container {
+    text-align: center;
+    padding: 20px 0px;
+    color: var(--color);
+    i {
+        color: var(--color);
+        cursor: pointer;
+    }
+    input {
+        transition: 0.4s all;
+        padding: 10px 20px;
+        background-color: rgb(255, 255, 255);
+    }
+}

@@ -1,6 +1,5 @@
 import tv from "../assets/smart-tv.png";
 import blueRay from "../assets/bluray.png";
-import lappy from "../assets/laptop.png";
 import game from "../assets/console.png";
 import vid from "../assets/video-tutorial.png";
 import smartPhone from "../assets/smartphone.png";

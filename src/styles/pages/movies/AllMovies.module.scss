@@ -1,0 +1,25 @@
+.container {
+    color: var(--color);
+    padding: 0px 20px;
+    .movies {
+        overflow: auto;
+        padding: 20px;
+    }
+    .movie_slider {
+        display: flex;
+        gap: 20px;
+        width: max-content;
+    }
+     ::-webkit-scrollbar {
+        background-color: var(--scroll-bar-color);
+        height: 5px;
+        transition: 0.3s all;
+    }
+     ::-webkit-scrollbar:hover {
+        height: 20px;
+    }
+     ::-webkit-scrollbar-thumb {
+        background-color: var(--hover);
+        border-radius: 5px;
+    }
+}

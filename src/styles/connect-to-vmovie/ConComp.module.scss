@@ -1,0 +1,25 @@
+.content {
+    display: flex;
+    min-height: 350px;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+    position: relative;
+    // padding: 20px;
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        filter: brightness(0.4);
+    }
+    h1 {
+        font-size: 30px;
+        z-index: 1000;
+    }
+    .con_heading {
+        color: rgb(255, 255, 255);
+    }
+}

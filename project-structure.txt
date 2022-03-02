@@ -1,0 +1,50 @@
+l1  l2   l3     l4    l5
+
+
+public
+|   |__index.html
+|
+src_
+    |
+    |
+    api //contains all loal APIs
+    |    |
+    |    |__Content.jsx //contains the content for the accordion made in the way to watch component
+    |    |
+    |    |__FAQ.jsx //contains the data for the FAQ section in the home component itself
+    |    |
+    |    |__homesection.jsx //contains the data for all the 4 sections that you see on home page for example. children section
+    |    |
+    |    |__wayToWatch.jsx //contains the data for the accordion content section 
+    |
+    |
+    assets_____contains all the images videos and pngs
+    |          
+    |
+    |
+    |
+    components__
+    |          |
+    |          |
+    |          |
+    |          |
+    |        component
+    |          |       |
+    |          |       |___this folder contains all the components like Button,input,collapse for faq etc
+    |          |
+    |          |
+    |          connect-vmovie-comps
+    |          |      |
+    |          |      |
+    |          |      |_____this folder contains all the components that are used to create the whole way to watch component
+    |          |
+    |          |
+    |          pages folder
+    |                 |
+    |                 |_____this folder contains all the pages of the website like home page , sign up and sign in page, credits page etc
+    |  
+    |
+    styles folder
+               |
+               |
+               |___this contains all the sass files for the styling of the webpage
