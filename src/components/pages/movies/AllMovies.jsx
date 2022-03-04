@@ -11,14 +11,14 @@ function AllMovies({ search }) {
   }, [search]);
 
   const getMovieRequest = async () => {
-    const url =
-      "http://www.omdbapi.com/?s=" +
-      (search == "" ? "latest" : search.trim().toLowerCase()) +
-      "&i=tt3896198&apikey=2e958e3d";
+    const url = `
+      https://api.themoviedb.org/3/search/movie?api_key=119c69fb68d9233d49f240cb24d58da6&language=en-US&query=${
+        search.trim() != "" ? search : "dilwale"
+      }&page=1&include_adult=false`;
     axios
       .get(url)
       .then((res) => {
-        setMovies(res.data.Search);
+        setMovies(res.data.results);
       })
       .catch((err) => {
         console.log(err);
@@ -36,9 +36,9 @@ function AllMovies({ search }) {
                 return (
                   <SingleMovie
                     key={idx}
-                    Poster={e.Poster}
-                    Title={e.Title}
-                    Year={e.Year}
+                    Poster={e.poster_path}
+                    Title={e.title}
+                    Year={e.release_date}
                   />
                 );
               })}
