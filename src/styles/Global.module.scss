@@ -16,6 +16,10 @@
     --primary-hover: #a80109;
     position: relative;
     background-color: black;
+     ::selection {
+        background-color: red;
+        color: white;
+    }
 }
 
 .dark_container {

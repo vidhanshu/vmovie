@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Input from "../../components/Input";
 import styles from "../../../styles/pages/movies/Search.module.scss";
-function Search({ changeSearch }) {
+function Search({ changeSearch, changeCategory }) {
   return (
     <div className={styles.container}>
       <div className={styles.search}>
@@ -12,7 +12,19 @@ function Search({ changeSearch }) {
           type="text"
           placeholder="Movie, artist, series....."
         />
-        <i className="fas fa-search"></i>
+        <div className={styles.select}>
+          <select
+            id="category"
+            onChange={(evt) => {
+              let query = evt.target.value.trim().toLocaleLowerCase();
+              changeCategory(query);
+            }}
+          >
+            <option value="tv">TV series</option>
+            <option value="person">Actor/Actress</option>
+            <option value="movies">Movies</option>
+          </select>
+        </div>
       </div>
     </div>
   );

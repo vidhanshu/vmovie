@@ -1,21 +1,30 @@
 .card {
-    overflow: hidden;
+    border: 0.1px solid rgb(114, 114, 114);
     border-radius: 5px;
-    border: none;
-    box-shadow: var(--box-shadow-border);
     min-width: 230px;
-    height: 350px;
-    img {
-        width: 100%;
-        height: 70%;
+    height: 100%;
+    .img_container {
+        background-color: greenyellow;
+        height: 250px;
+        overflow: hidden;
+        border-radius: inherit;
+        img {
+            transition: 0.3s all;
+            width: 100%;
+            height: inherit;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
     }
     .content {
         width: 200px;
-        height: 100%;
-        padding: 20px;
+        height: 110px;
+        padding: 10px;
         display: flex;
         flex-direction: column;
         justify-content: start;
+        position: relative;
         h5 {
             font-size: 10px;
         }
