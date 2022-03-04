@@ -13,7 +13,11 @@ function Hero() {
         Enter your email to create or restart your membership.
       </div>
       <div className={styles.input_group}>
-        <Input placeholder="Enter your email address"></Input>
+        <Input
+          required="true"
+          type="email"
+          placeholder="Enter your email address"
+        ></Input>
         <Link to="/movies">
           <Button normal={true}>Get started &#8811;</Button>
         </Link>

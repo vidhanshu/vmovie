@@ -5,8 +5,12 @@ import SingleMovie from "./SingleMovie";
 import AllTypeOfMovies from "./AllTypeOfMovies";
 import NotFound from "./NotFound";
 import ProgressBar from "./ProgressBar";
+import data from "../../../api/Data.json";
+
 function AllMovies({ search, category }) {
   const [movies, setMovies] = useState([]);
+  const [err, setErr] = useState(false);
+
   useEffect(() => {
     getMovieRequest();
   }, [search]);
@@ -20,15 +24,18 @@ function AllMovies({ search, category }) {
     await axios
       .get(url)
       .then((res) => {
+        setErr(false);
         setMovies(res.data.results);
         console.log(res.data.results);
       })
       .catch((err) => {
         console.log(err);
+        setErr(true);
+        setMovies(data);
       });
     console.log(category);
   };
-  return (
+  return !err ? (
     <div className={styles.container}>
       <div className={styles.movies}>
         {search.trim() === "" ? (
@@ -43,8 +50,20 @@ function AllMovies({ search, category }) {
                     Poster={
                       category === "person" ? e.profile_path : e.poster_path
                     }
-                    Title={e.title}
-                    Year={e.release_date}
+                    Title={
+                      category == "person"
+                        ? e.name
+                        : category == "tv"
+                        ? e.original_name
+                        : e.title
+                    }
+                    Year={
+                      category === "person"
+                        ? e.known_for_department
+                        : category === "tv"
+                        ? e.first_air_date
+                        : e.release_date
+                    }
                     popularity={e.popularity}
                   />
                 );
@@ -56,6 +75,10 @@ function AllMovies({ search, category }) {
         )}
       </div>
     </div>
+  ) : (
+    <h1 className={styles.api_limit_exceed}>
+      Sorry API request LIMIT exceeded
+    </h1>
   );
 }
 

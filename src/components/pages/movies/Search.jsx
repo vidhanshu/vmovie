@@ -18,6 +18,9 @@ function Search({ changeSearch, changeCategory }) {
             onChange={(evt) => {
               let query = evt.target.value.trim().toLocaleLowerCase();
               changeCategory(query);
+              changeSearch(
+                query === "person" ? "john" : query === "tv" ? "oggy" : "dil"
+              );
             }}
           >
             <option value="tv">TV series</option>

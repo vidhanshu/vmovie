@@ -10,16 +10,32 @@
     font-size: 15px;
 }
 
+::selection {
+    background-color: red;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    background-color: var(--hover);
+    width: 5px;
+    transition: 0.3s all;
+}
+
+::-webkit-scrollbar--thumb {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color);
+    border-radius: 0px;
+}
+
 .common {
     --sign-up-btn-text-color: white;
     --primary: #e50914;
     --primary-hover: #a80109;
     position: relative;
     background-color: black;
-     ::selection {
-        background-color: red;
-        color: white;
-    }
 }
 
 .dark_container {

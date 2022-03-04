@@ -8,7 +8,7 @@ import Credits from "./components/pages/Credits";
 import Services from "./components/pages/Services";
 import Footer from "./components/components/Footer";
 import Movies from "./components/pages/movies/Movies";
-
+import Sign from "./components/pages/Sign";
 function App() {
   const [dark, setDark] = useState(true);
   const modeToggle = () => {
@@ -29,6 +29,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/credits" element={<Credits />} />
         <Route path="/movies" element={<Movies />} />
+        <Route path="/sign" element={<Sign />} />
       </Routes>
       <Footer />
     </div>

@@ -1,0 +1,102 @@
+{
+    "page": 1,
+    "results": [{
+            "backdrop_path": "/fVO7r9tAnauny8DAqbetlQ1tVtu.jpg",
+            "first_air_date": "1999-09-06",
+            "genre_ids": [
+                16,
+                35
+            ],
+            "id": 2777,
+            "name": "Oggy and the Cockroaches",
+            "origin_country": [
+                "FR"
+            ],
+            "original_language": "fr",
+            "original_name": "Oggy et les Cafards",
+            "overview": "Oggy, an anthropomorphic cat, would prefer to spend his days watching television and eating, but is continuously pestered by three roaches: Joey, Marky and Dee Dee. The cockroaches' slapstick mischief ranges from plundering Oggy's refrigerator to hijacking the train he just boarded. In many situations Oggy is also helped by Jack, who is more violent and short-tempered than him and is also annoyed by the cockroaches. Bob, a short-tempered bulldog, also appears in the show, and is Oggy's neighbor.",
+            "popularity": 52.241,
+            "poster_path": "/aFAN9aKm0OblOr30ROejJCV8rGf.jpg",
+            "vote_average": 7.5,
+            "vote_count": 261
+        },
+        {
+            "backdrop_path": "/25ZuXiNAvGsql8aJtK1nsT7CSu0.jpg",
+            "first_air_date": "2021-08-24",
+            "genre_ids": [
+                16
+            ],
+            "id": 131721,
+            "name": "Oggy Oggy",
+            "origin_country": [
+                "US"
+            ],
+            "original_language": "en",
+            "original_name": "Oggy Oggy",
+            "overview": "Join adorable kitten Oggy and his cast of cat pals in a bright and colorful kitty world. They're always on the go for fun times and fantastic adventures!",
+            "popularity": 2.843,
+            "poster_path": "/5vbdCcX3HVwo9fj40aRplGpblOF.jpg",
+            "vote_average": 0,
+            "vote_count": 0
+        },
+        {
+            "backdrop_path": "/y2aBeiQj6IEU2ASHIJwpKZ5sZOv.jpg",
+            "genre_ids": [
+                16,
+                10762
+            ],
+            "id": 49562,
+            "name": "The New Adventures of Oggy",
+            "origin_country": [
+                "FR"
+            ],
+            "original_language": "en",
+            "original_name": "Oggy - Next Gen",
+            "overview": "Oggy is welcoming a guest for vacation: Piya , a 7 year old elephant, the daughter of his Indian friends. Tender hearted, happy go lucky, and full of energy, the elephant will completely derail Oggy’s daily grind, and the blue cat will learn how to be a surrogate parent. It’s a dream come true for the roaches, who see Piya as a new way to make Oggy’s life miserable.",
+            "popularity": 0.6,
+            "poster_path": "/xah76551loiwlmsHc8RmJSZTKqk.jpg",
+            "vote_average": 0,
+            "vote_count": 0
+        },
+        {
+            "backdrop_path": "/8QGPf7ZZGlUQHrc5qR10IikNdg0.jpg",
+            "first_air_date": "2009-03-31",
+            "genre_ids": [
+                10759,
+                18
+            ],
+            "id": 41518,
+            "name": "Squadra antimafia – Palermo oggi",
+            "origin_country": [
+                "IT"
+            ],
+            "original_language": "it",
+            "original_name": "Squadra antimafia – Palermo oggi",
+            "overview": "Fighting a modern, fragmented and brutal Mafia, the Sicilian Anti-Mafia Squad seeks to crush the criminal network that holds a death grip on the region. Sophisticated surveillance helps, unless the enemy lies within.",
+            "popularity": 7.422,
+            "poster_path": "/p8bVE6QigGqqQDcjj9cXxkKS3BV.jpg",
+            "vote_average": 10,
+            "vote_count": 2
+        },
+        {
+            "backdrop_path": null,
+            "genre_ids": [
+                18
+            ],
+            "id": 78671,
+            "name": "Gladiator of Pompeii",
+            "origin_country": [
+                "IT"
+            ],
+            "original_language": "it",
+            "original_name": "Pompei Ieri Oggi e Domani",
+            "overview": "A story of eternal romance and inevitable disaster recounting the tale of this once majestic city.",
+            "popularity": 1.4,
+            "poster_path": null,
+            "vote_average": 6,
+            "vote_count": 1
+        }
+    ],
+    "total_pages": 1,
+    "total_results": 5
+}
